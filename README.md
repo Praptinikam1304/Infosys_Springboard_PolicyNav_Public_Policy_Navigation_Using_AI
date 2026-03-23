@@ -1,4 +1,4 @@
-# 🏛️ PolicyNav — AI-Powered Policy Intelligence Platform
+# 🏛️ Infosys_Springboard_PolicyNav_Public-\_Policy_Navigation_Using_AI
 
 > **Infosys Springboard Internship | Final Project**  
 > An end-to-end intelligent policy analysis system featuring secure authentication, NLP-powered Q&A, multi-language support, knowledge graphs, and rich admin/user dashboards — deployed via Streamlit + Docker.
@@ -92,7 +92,7 @@ The project was built incrementally over **4 milestones** during the Infosys Spr
 | 📧 OTP Verification | Email-based one-time password for login & registration |
 | 🔒 Account Lockout | Auto-lock after 3 failed attempts for 5 minutes |
 | 🔑 Forgot Password | Secure reset flow with password history enforcement (last 3) |
-| 📊 Readability Dashboard | 8+ readability metrics (Flesch, SMOG, ARI, etc.) per document |
+| 📊 Readability Dashboard | 5 readability metrics (Flesch, SMOG, Coleman, etc.) per document |
 | 🤖 Q&A Engine | Retrieval-Augmented Generation (RAG) over uploaded PDFs |
 | 🌍 Multi-Language Support | Query and summarize in multiple languages via NLLB-200 |
 | 🕸️ Knowledge Graph | Interactive entity & relationship visualization using PyVis |
@@ -155,10 +155,7 @@ NGROK_AUTHTOKEN     — For exposing Streamlit via ngrok tunnel
   - Flesch-Kincaid Grade Level
   - SMOG Index
   - Coleman-Liau Index
-  - Automated Readability Index (ARI)
-  - Dale-Chall Score
   - Gunning Fog Index
-  - Linsear Write Formula
 - **OTP fully integrated** into the registration and login flows
 - **Improved UI/UX** — Streamlit option-menu navigation, themed layouts, better form flows
 - **Document Upload** — PDF upload to Google Drive persisted storage
@@ -184,7 +181,7 @@ NGROK_AUTHTOKEN     — For exposing Streamlit via ngrok tunnel
   - Supports querying in multiple languages
 
 - **Multi-Language Summarization**
-  - `facebook/nllb-200-distilled-600M` handles translation across 200 languages
+  - `facebook/nllb-200-distilled-600M` handles translation across multiple languages
   - Users can select target language for summaries and Q&A responses
 
 - **Knowledge Graph**
@@ -204,8 +201,8 @@ NGROK_AUTHTOKEN     — For exposing Streamlit via ngrok tunnel
 
 | Model | Task | Source |
 |---|---|---|
-| `Qwen/Qwen2.5-1.5B-Instruct` | Q&A / Text generation | Hugging Face |
-| `facebook/nllb-200-distilled-600M` | Translation (200 languages) | Hugging Face |
+| `Qwen/Qwen2.5-1.5B-Instruct` | Q&A / Text generation | ![face](images/logo.svg) Hugging Face |
+| `facebook/nllb-200-distilled-600M` | Translation | ![face](images/logo.svg) Hugging Face |
 | `all-MiniLM-L6-v2` | Sentence embeddings for retrieval | sentence-transformers |
 | `en_core_web_sm` | NER / Entity extraction | spaCy |
 
@@ -312,7 +309,7 @@ app.py              — Main Streamlit application
 auth.py             — Authentication: JWT, OTP, lockout, password history
 db.py               — SQLite database schema and queries
 config.py           — App-wide configuration constants
-readability.py      — Readability metrics wrapper
+readability.py      — Readability metrics 
 vector_store.py     — FAISS document ingestion and retrieval
 nlp_engine.py       — Qwen2.5 Q&A + NLLB translation
 knowledge_graph.py  — spaCy NER + NetworkX + PyVis graph
@@ -454,12 +451,63 @@ The SQLite database (`policynav_users.db`) contains the following tables:
 | `created_at` | TEXT | Timestamp |
 
 ---
+### 🔑 Login Page
 
-## 👨‍💻 Author
+![Login Page](images/login.jpeg)
 
-**Infosys Springboard Internship**  
-Built milestone by milestone, integrating each layer into a cohesive AI-powered policy intelligence platform.
+### 〰️ Dashboard
 
+![Dashboard](images/profile_avatar.jpeg)
+
+### 🔐 Admin
+
+![Admin](images/admin.jpeg)
+
+### 🧭 Pending Registrations
+
+![Pending Registration](images/pending.jpeg)
+
+### 🔒 Admin Security Monitor
+
+![Admin Security Monitor](images/admin_security_monitor.jpeg)
+
+### 🔁 User Activity
+
+![User Activity](images/user_activity.jpeg)
+
+### 🔍 Analytics Dashboard
+
+![Analytics Dashboard](images/analytics_dashboard.jpeg)
+![Analytics Dashboard2](images/analytics_dashboard2.jpeg)
+
+### 🔐 Feedback
+
+![Feedback](images/feedback_analysis.jpeg)
+![WordCloud](images/wordcloud.jpeg)
+![Feedback Export](images/feedback_analysis_export.jpeg)
+
+### 📖 Readability Analyzer
+
+![Readability Analyzer](images/readability_analyzer.jpeg)
+
+### 🧾 Summarization
+
+![Summarization](images/summarization.jpeg)
+
+### 🎯 Gamification
+
+![Gamification](images/gamification.jpeg)
+
+### 💹 Knowledge Graph
+
+![Knowledge Graph](images/knowledge_graph.jpeg)
 ---
 
-*PolicyNav — Making Policy Documents Intelligent, Accessible & Multilingual.*
+# Author
+
+**Infosys Springboard Virtual Internship – Batch 13** <br>
+Bhavithravanan C A <br>
+Gaurav Mehtha <br>
+Junaid Bin Riyaz <br>
+Prapti Nikam <br>
+Srinivasa Rajan M
