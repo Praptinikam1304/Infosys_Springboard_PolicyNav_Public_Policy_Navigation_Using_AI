@@ -451,57 +451,7 @@ The SQLite database (`policynav_users.db`) contains the following tables:
 | `created_at` | TEXT | Timestamp |
 
 ---
-### 🔑 Login Page
 
-![Login Page](images/login.jpeg)
-
-### 〰️ Dashboard
-
-![Dashboard](images/profile_avatar.jpeg)
-
-### 🔐 Admin
-
-![Admin](images/admin.jpeg)
-
-### 🧭 Pending Registrations
-
-![Pending Registration](images/pending.jpeg)
-
-### 🔒 Admin Security Monitor
-
-![Admin Security Monitor](images/admin_security_monitor.jpeg)
-
-### 🔁 User Activity
-
-![User Activity](images/user_activity.jpeg)
-
-### 🔍 Analytics Dashboard
-
-![Analytics Dashboard](images/analytics_dashboard.jpeg)
-![Analytics Dashboard2](images/analytics_dashboard2.jpeg)
-
-### 🔐 Feedback
-
-![Feedback](images/feedback_analysis.jpeg)
-![WordCloud](images/wordcloud.jpeg)
-![Feedback Export](images/feedback_analysis_export.jpeg)
-
-### 📖 Readability Analyzer
-
-![Readability Analyzer](images/readability_analyzer.jpeg)
-
-### 🧾 Summarization
-
-![Summarization](images/summarization.jpeg)
-
-### 🎯 Gamification
-
-![Gamification](images/gamification.jpeg)
-
-### 💹 Knowledge Graph
-
-![Knowledge Graph](images/knowledge_graph.jpeg)
----
 
 # Author
 
